@@ -35,6 +35,7 @@ COPY . /app
 
 # Install dependencies
 RUN pip install -r requirements.txt
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 # Expose the port Flask runs on
 EXPOSE 5000

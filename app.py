@@ -26,7 +26,7 @@ for root, dirs, files in os.walk(".", topdown=False):
       print(os.path.join(root, name))
    for name in dirs:
       print(os.path.join(root, name))
-model = load_model('/app/best_val_acc_model.keras')
+model = load_model('./best_val_acc_model.keras')
 
 def image_preprocessing(img_path):
     '''

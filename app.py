@@ -21,7 +21,7 @@ os.makedirs(
     exist_ok = True
 )
 
-model = load_model('best_val_acc_model.keras')
+model = load_model('compvis_age_predictor_model.keras')
 
 def image_preprocessing(img_path):
     '''

@@ -21,6 +21,7 @@ os.makedirs(
     exist_ok = True
 )
 
+print(os.walk('./'))
 model = load_model('/app/best_val_acc_model.keras')
 
 def image_preprocessing(img_path):

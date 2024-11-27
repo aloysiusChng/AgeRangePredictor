@@ -21,11 +21,6 @@ os.makedirs(
     exist_ok = True
 )
 
-for root, dirs, files in os.walk(".", topdown=False):
-   for name in files:
-      print(os.path.join(root, name))
-   for name in dirs:
-      print(os.path.join(root, name))
 model = load_model('best_val_acc_model.keras')
 
 def image_preprocessing(img_path):

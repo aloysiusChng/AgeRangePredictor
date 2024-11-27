@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Age Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: rgb(220, 220, 220);
+        }
+    </style>
+    <script src="/static/js/image_handler.js"></script>
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div style="width: 450px;" class="bg-white p-3 rounded">
+            <h1 class="fs-3 text-center">Age Predictor</h1>
+            <div class="rounded border d-flex justify-content-center align-items-center overflow-hidden" style="aspect-ratio: 1/1;">
+                <div class="fw-semibold m-2" id="image-upload-container">
+                    <p class="text-center m-0 mb-2">Upload an image of a person</p>
+                    <input type="file" accept="image/*" id="image-upload-btn" class="form-control">
+                    <button class="btn btn-primary w-100 mt-2" id="predict-btn" disabled><i class="bi bi-question-circle"></i> Predict Age</button>
+                </div>
+                <img class="w-100 h-100" id="image-preview" style="display: none;">
+            </div>
+            <div id="prediction-results-container" class="mt-2" style="display: none;">
+                <p class="text-center m-0 mt-2 fw-semibold" id="predicted-age-label">Predicted age: X</p>
+                <button class="btn btn-primary w-100 mt-2" id="return-btn"><i class="bi bi-arrow-clockwise"></i> New Image</button>
+            </div>
+        </div>
+    </div>
+    <div id="loading-container" class="fixed-top" style="background-color: rgba(0,0,0,0.3);display: none;">
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

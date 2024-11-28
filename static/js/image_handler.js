@@ -1,9 +1,8 @@
 const age_ranges_index = {
-    0: "0-24",
-    1: "25-49",
-    2: "50-74",
-    3: "75-99",
-    4: "100-124"
+    0: "0-20",
+    1: "21-40",
+    2: "41-60",
+    3: "61-80"
 }
 
 document.addEventListener('DOMContentLoaded', async function() {

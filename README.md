@@ -6,7 +6,7 @@ CHNG SONG HENG ALOYSIUS | 2302857
 WONG KHIN FOONG | 2302728
 LIM JUN KHAI JAVIN | 2302694
 
-Project Github Repo: https://github.com/aloysiusChng/CV_FinalProject
+Project Github Repo: https://github.com/aloysiusChng/AgeRangePredictor
  
 # Set Up & Run Project
 1. Have Python 3.11 installed
